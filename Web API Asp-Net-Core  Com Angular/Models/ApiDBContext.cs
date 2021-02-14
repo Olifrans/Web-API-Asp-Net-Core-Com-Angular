@@ -26,3 +26,15 @@ namespace Web_API_Asp_Net_Core__Com_Angular.Models
 //Update-Database
 
 //Add-Migration "InitialCreate"
+
+//new AngularInlineTableCRUD
+
+//http://www.wox.one/
+
+//https://angular.io/
+
+//Na busca escreve:
+//ng new
+
+//ng new AngularWebAPIAspNetCoreCrud
+
