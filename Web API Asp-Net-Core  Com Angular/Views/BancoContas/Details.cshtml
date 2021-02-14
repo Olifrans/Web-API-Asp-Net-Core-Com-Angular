@@ -1,0 +1,42 @@
+﻿@model Web_API_Asp_Net_Core__Com_Angular.Models.BancoConta
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>BancoConta</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ContaNumero)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ContaNumero)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ContaSeguradora)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ContaSeguradora)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BancoId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BancoId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BRFSC)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BRFSC)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.BancoContaId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

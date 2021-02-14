@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Web_API_Asp_Net_Core__Com_Angular.Models.BancoConta>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ContaNumero)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContaSeguradora)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BancoId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BRFSC)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContaNumero)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContaSeguradora)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BancoId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BRFSC)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.BancoContaId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.BancoContaId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.BancoContaId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
